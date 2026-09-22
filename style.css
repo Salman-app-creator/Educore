@@ -1407,8 +1407,6 @@ a.cd-value:hover { color: var(--maroon); }
   .hero-buttons { flex-direction: column; gap: 12px; align-items: center; }
   .btn-primary, .btn-whatsapp { width: 100%; justify-content: center; }
   .features-grid { grid-template-columns: 1fr; }
-  .features-grid .feature-card { display: flex; flex-direction: row; align-items: flex-start; gap: 16px; }
-  .features-grid .feature-card .feature-icon { margin-bottom: 0; flex-shrink: 0; }
   .trust-grid { grid-template-columns: 1fr; gap: 12px; }
   .form-row { grid-template-columns: 1fr; }
   .contact-form-wrap { padding: 28px 20px; }
