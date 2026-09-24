@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EduCore — Pakistan ka sab se modern School Management System. Fees, attendance, results, staff, multi-branch — sab ek jagah." />
+  <title>EduCore — School Management System for Pakistani Schools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-box">🎓</span>
+        <span class="logo-text">EduCore</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#messaging" class="nav-link">Messaging</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#demo" class="nav-link">Demo</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20EduCore%20ka%20free%20demo%20chahiye" class="btn-nav-cta" target="_blank" rel="noopener">Get Started</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+    <a href="#features" class="drawer-link">Features</a>
+    <a href="#messaging" class="drawer-link">Messaging</a>
+    <a href="#how-it-works" class="drawer-link">How It Works</a>
+    <a href="#pricing" class="drawer-link">Pricing</a>
+    <a href="#demo" class="drawer-link">Demo</a>
+    <a href="#contact" class="drawer-link">Contact</a>
+    <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20EduCore%20ka%20free%20demo%20chahiye" class="drawer-cta" target="_blank" rel="noopener">Get Started</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Animated background orbs -->
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+    </div>
+    <!-- Mesh gradient overlay -->
+    <div class="hero-mesh"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        🎓 Built for Pakistani Schools
+      </div>
+
+      <h1 class="hero-headline reveal">
+        The Complete<br />
+        <span class="gradient-text">School Management</span><br />
+        System
+      </h1>
+
+      <p class="hero-sub reveal">
+        Fees, attendance, results, staff, multi-branch — <strong>sab kuch ek hi jagah.</strong><br />
+        Built for Pakistani schools. Simple, fast, reliable.
+      </p>
+
+      <div class="hero-buttons reveal">
+        <a href="http://141.148.223.177/" target="_blank" rel="noopener" class="btn-primary">
+          <span>Try Live Demo</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20EduCore%20ka%20free%20demo%20chahiye" target="_blank" rel="noopener" class="btn-whatsapp">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Karo: 0313-6176616
+        </a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="hero-stats reveal">
+        <div class="stat-card">
+          <span class="stat-num" data-target="10" data-suffix="+">0</span>
+          <span class="stat-label">Modules</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="100" data-suffix="%">0</span>
+          <span class="stat-label">Web-Based</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="400" data-suffix="+">0</span>
+          <span class="stat-label">Students</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="24" data-suffix="/7">0</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FEATURES SECTION
+  ═══════════════════════════════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Features</p>
+        <h2 class="section-title">Sab Kuch Ek Jagah</h2>
+        <p class="section-sub">Har cheez jo school chalane ke liye chahiye</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #9E3039;">📊</div>
+          <h3>Visual Dashboard</h3>
+          <p>Real-time analytics aur campus-by-campus comparison. Har cheez ek nazar mein.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #2C4A3A;">💰</div>
+          <h3>Fee Management</h3>
+          <p>Bulk vouchers, family grouping, auto-allocation. Fee collection ab aasaan hai.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #7a232b;">🏫</div>
+          <h3>Multi-Branch</h3>
+          <p>Main + UH campus, har branch ka data alag. Ek dashboard, sab control.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #d4455a;">📋</div>
+          <h3>Report Cards</h3>
+          <p>Weekly, monthly, quarterly, term-wise — printable report cards seconds mein.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #FFD700;">🎒</div>
+          <h3>Student Portal</h3>
+          <p>Roll no se login, results, attendance, fees — students khud dekh saktay hain.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #2C4A3A;">📦</div>
+          <h3>Products & Supplies</h3>
+          <p>Stock tracking, low-stock alerts. School supplies ka poora hisaab kitaab.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #9E3039;">👨‍🏫</div>
+          <h3>Staff Management</h3>
+          <p>Teachers, coordinators, accountants — sab ki profiles aur roles ek jagah.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #1a1a2e;">🔐</div>
+          <h3>Secure & Reliable</h3>
+          <p>Daily backups, role-based access, audit log. Aap ka data safe rehta hai.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon" style="--icon-color: #d4455a;">📱</div>
+          <h3>Mobile Responsive</h3>
+          <p>Phone, tablet, desktop — har jagah perfectly kaam karta hai.</p>
+        </div>
+        <div class="feature-card reveal" style="background: linear-gradient(135deg, #FFD700 0%, #d4a800 100%); border: 2px solid #FFD700;">
+  <div class="feature-icon" style="background: rgba(0,0,0,0.15);">💬</div>
+  <h3 style="color: #1a1a2e;">FREE Messaging System</h3>
+  <p style="color: rgba(26,26,46,0.85); font-weight: 600;">WhatsApp Business API ka <strong>Rs 15,000/month</strong> kharcha bachao. Built-in chat + broadcast — bilkul free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ MESSAGING SECTION ============ -->
+<section class="wa-section" id="messaging">
+  <div class="wa-wrap">
+    <span class="wa-badge">💰 Rs 1.8 Lakh Saalana Bachat</span>
+    <h2 class="wa-headline">WhatsApp Business API ka<br><span class="grad">kharcha khatam karein</span></h2>
+    <p class="wa-sub">EduCore mein <strong>built-in free messaging system</strong> hai — Principal se lekar Parents tak, poore school ki communication ek hi jagah. Koi monthly API fee nahi, koi per-message charge nahi.</p>
+    <div class="wa-compare">
+      <div class="wa-card whatsapp">
+        <span class="wa-card-tag">❌ WhatsApp Business API</span>
+        <h3>Mehnga aur Limited</h3>
+        <div class="wa-cost-row"><span class="wa-cost-num">Rs 15,000+</span><span class="wa-cost-per">/month</span></div>
+
+        <span class="wa-cost-label">500 parents × 10 messages</span>
+        <ul class="wa-feat">
+          <li>Setup fee Rs 10,000 (one-time)</li>
+          <li>Per-message charge: Rs 1-3</li>
+          <li>Broadcast limits</li>
+          <li>Read receipts pe extra charge</li>
+          <li>Third-party approval needed</li>
+        </ul>
+      </div>
+      <div class="wa-card educore">
+        <span class="wa-card-tag">✅ EduCore Messaging</span>
+        <h3>Sada FREE</h3>
+        <div class="wa-cost-row"><span class="wa-cost-num">Rs 0</span><span class="wa-cost-per">/month</span></div>
+        <span class="wa-cost-label">Unlimited messages included</span>
+        <ul class="wa-feat">
+          <li>No setup fee</li>
+          <li>Unlimited messages — free</li>
+          <li>Broadcast to 1000s of parents</li>
+          <li>Read receipts included</li>
+          <li>Hierarchical flow (Principal → Coordinator → Teacher → Parent)</li>
+          <li>Auto phone notifications</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wa-savings">
+      <div class="wa-savings-text">Aapki saalana bachat<small>vs WhatsApp Business API (500 parents)</small></div>
+      <div class="wa-savings-num">Rs 1,80,000</div>
+    </div>
+    <a href="http://141.148.223.177/" class="wa-cta" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      Live Demo Dekhein
+    </a>
+  </div>
+</section>
+
+
+  <!-- ═══════════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════════ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Process</p>
+        <h2 class="section-title">Kaise Shuru Karein?</h2>
+        <p class="section-sub">Teen simple steps mein aap ka school digital ho jayega</p>
+      </div>
+
+      <div class="steps-row">
+        <div class="step-card reveal">
+          <div class="step-num">01</div>
+          <div class="step-icon">💬</div>
+          <h3>Contact Karein</h3>
+          <p>WhatsApp pe rabta karein. Hum aap ka free demo banayenge aur requirements samjhenge.</p>
+        </div>
+
+        <div class="step-arrow reveal">
+          <svg width="48" height="24" viewBox="0 0 48 24" fill="none">
+            <path d="M2 12 L40 12 M34 5 L42 12 L34 19" stroke="url(#arrowGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="arrowGrad" x1="0" y1="0" x2="48" y2="0" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9E3039"/>
+                <stop offset="1" stop-color="#d4455a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-num">02</div>
+          <div class="step-icon">📂</div>
+          <h3>Data Import</h3>
+          <p>Students and staff ki list bhejein. 1 din mein poora setup ho jaata hai.</p>
+        </div>
+
+        <div class="step-arrow reveal">
+          <svg width="48" height="24" viewBox="0 0 48 24" fill="none">
+            <path d="M2 12 L40 12 M34 5 L42 12 L34 19" stroke="url(#arrowGrad2)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="arrowGrad2" x1="0" y1="0" x2="48" y2="0" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9E3039"/>
+                <stop offset="1" stop-color="#d4455a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="step-card reveal">
+          <div class="step-num">03</div>
+          <div class="step-icon">🚀</div>
+          <h3>Go Live</h3>
+          <p>Team ko training milti hai. Aap ka portal live — <strong>yourschool.educore.pk</strong> pe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       LIVE DEMO SECTION
+  ═══════════════════════════════════════ -->
+  <section class="demo-section" id="demo">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Live Demo</p>
+        <h2 class="section-title">Khud Dekh Lein</h2>
+        <p class="section-sub">Real EduCore — live running system</p>
+      </div>
+
+      <div class="browser-wrapper reveal">
+        <div class="browser-mockup">
+          <!-- Browser chrome -->
+          <div class="browser-chrome">
+            <div class="browser-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="browser-url">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6b6b6b" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              141.148.223.177
+            </div>
+          </div>
+
+          <!-- Dashboard mockup inside browser -->
+          <div class="dashboard-mockup">
+            <!-- Sidebar -->
+            <div class="mock-sidebar">
+              <div class="mock-logo-mini">🎓 EduCore</div>
+              <div class="mock-nav-item active">📊 Dashboard</div>
+              <div class="mock-nav-item">👨‍🎓 Students</div>
+              <div class="mock-nav-item">💰 Fees</div>
+              <div class="mock-nav-item">📋 Results</div>
+              <div class="mock-nav-item">👨‍🏫 Staff</div>
+              <div class="mock-nav-item">🏫 Branches</div>
+              <div class="mock-nav-item">📦 Supplies</div>
+              <div class="mock-nav-item">⚙️ Settings</div>
+            </div>
+
+            <!-- Main content -->
+            <div class="mock-main">
+              <div class="mock-topbar">
+                <span class="mock-greeting">Good morning, Admin ☀️</span>
+                <span class="mock-date">Sep 2026</span>
+              </div>
+
+              <!-- Stat cards row -->
+              <div class="mock-stats-row">
+                <div class="mock-stat-card" style="--sc: #9E3039;">
+                  <span class="msc-label">Total Students</span>
+                  <span class="msc-value">412</span>
+                  <span class="msc-delta">↑ 12 this month</span>
+                </div>
+                <div class="mock-stat-card" style="--sc: #2C4A3A;">
+                  <span class="msc-label">Fee Collected</span>
+                  <span class="msc-value">Rs 1.8M</span>
+                  <span class="msc-delta">↑ 94% recovery</span>
+                </div>
+                <div class="mock-stat-card" style="--sc: #d4455a;">
+                  <span class="msc-label">Attendance</span>
+                  <span class="msc-value">87%</span>
+                  <span class="msc-delta">Today's average</span>
+                </div>
+                <div class="mock-stat-card" style="--sc: #FFD700; --text-c: #1a1a1a;">
+                  <span class="msc-label">Pending Fees</span>
+                  <span class="msc-value" style="color:#1a1a1a;">Rs 0.3M</span>
+                  <span class="msc-delta" style="color:#555;">18 students</span>
+                </div>
+              </div>
+
+              <!-- Chart area -->
+              <div class="mock-chart-area">
+                <div class="mock-chart-title">Monthly Fee Collection</div>
+                <div class="mock-bar-chart">
+                  <div class="mock-bar" style="--h: 65%; --c: #9E3039;"><span>Jul</span></div>
+                  <div class="mock-bar" style="--h: 80%; --c: #9E3039;"><span>Aug</span></div>
+                  <div class="mock-bar" style="--h: 55%; --c: #9E3039;"><span>Sep</span></div>
+                  <div class="mock-bar" style="--h: 90%; --c: #d4455a;"><span>Oct</span></div>
+                  <div class="mock-bar" style="--h: 72%; --c: #9E3039;"><span>Nov</span></div>
+                  <div class="mock-bar" style="--h: 94%; --c: #2C4A3A;"><span>Dec</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hover overlay -->
+          <a href="http://141.148.223.177/" target="_blank" rel="noopener" class="demo-overlay">
+            <div class="demo-play-btn">▶</div>
+            <p>Click to Open Live Demo</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Demo credentials -->
+      <div class="demo-creds reveal">
+        <div class="cred-title">Demo Credentials</div>
+        <div class="creds-row">
+          <div class="cred-item">
+            <span class="cred-label">🌐 Demo URL</span>
+            <span class="cred-val">141.148.223.177</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-label">📧 Email</span>
+            <span class="cred-val">demo@educore.pk</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-label">🔑 Password</span>
+            <span class="cred-val">Demo@2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PRICING SECTION
+  ═══════════════════════════════════════ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Pricing</p>
+        <h2 class="section-title">Simple Pricing</h2>
+        <p class="section-sub">Koi hidden charges nahi — jo dikhta hai wahi pay karo</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <div class="price-card reveal">
+          <div class="price-badge">Starter</div>
+          <div class="price-setup">Rs 20,000 <small>setup (one-time)</small></div>
+          <div class="price-monthly">
+            <span class="price-amount">Rs 25</span>
+            <span class="price-per">/ student / month</span>
+          </div>
+          <ul class="price-features">
+            <li>✅ 1 campus, up to 300 students</li>
+            <li>✅ All core modules</li>
+            <li>✅ Fee management</li>
+            <li>✅ Attendance & results</li>
+            <li>✅ Email support</li>
+            <li class="muted">❌ Student portal</li>
+            <li class="muted">❌ Multi-branch</li>
+          </ul>
+          <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20Starter%20plan%20ke%20baare%20mein%20baat%20karni%20hai" target="_blank" rel="noopener" class="price-btn">Get Starter</a>
+        </div>
+
+        <!-- Enterprise (Featured) -->
+        <div class="price-card price-featured reveal">
+          <div class="price-popular-tag">Most Popular</div>
+          <div class="price-badge">Enterprise</div>
+          <div class="price-setup">Rs 40,000 <small>setup (one-time)</small></div>
+          <div class="price-monthly">
+            <span class="price-amount">Rs 10</span>
+            <span class="price-per">/ student / month</span>
+          </div>
+          <ul class="price-features">
+            <li>✅ Unlimited campuses + students</li>
+            <li>✅ All modules + student portal</li>
+            <li>✅ Multi-branch management</li>
+            <li>✅ Priority WhatsApp support</li>
+            <li>✅ Free data migration</li>
+            <li>✅ Custom domain setup</li>
+            <li>✅ Dedicated onboarding</li>
+          </ul>
+          <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20Enterprise%20plan%20ke%20baare%20mein%20baat%20karni%20hai" target="_blank" rel="noopener" class="price-btn price-btn-featured">Get Enterprise</a>
+        </div>
+
+        <!-- Custom -->
+        <div class="price-card reveal">
+          <div class="price-badge">Custom</div>
+          <div class="price-setup">Custom <small>pricing</small></div>
+          <div class="price-monthly">
+            <span class="price-amount" style="font-size:1.6rem;">Let's Talk</span>
+          </div>
+          <ul class="price-features">
+            <li>✅ School groups (5+ branches)</li>
+            <li>✅ Dedicated database server</li>
+            <li>✅ Custom domain + SSL</li>
+            <li>✅ On-site training</li>
+            <li>✅ SLA agreement</li>
+            <li>✅ Custom module development</li>
+            <li>✅ Priority account manager</li>
+          </ul>
+          <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20custom%20pricing%20ke%20baare%20mein%20baat%20karni%20hai" target="_blank" rel="noopener" class="price-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIALS SECTION
+  ═══════════════════════════════════════ -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Schools Ki Rai</p>
+        <h2 class="section-title">Principals Kya Kehte Hain</h2>
+        <p class="section-sub">Real feedback — un logon se jo EduCore use karte hain</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Pehle fees ka hisaab ek register mein hota tha — galtiyan hoti thi, time bhi lagta tha. EduCore ke baad sab automatic ho gaya. Ek hi click mein 400 students ke vouchers print ho jaate hain."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MH</div>
+            <div class="testi-info">
+              <span class="testi-name">Muhammad Hanif</span>
+              <span class="testi-role">Principal, Al-Noor School System · Multan</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Attendance aur results dono manually karte the — 2 ghante ka kaam. Ab 10 minute mein ho jaata hai. Parents ko bhi apne bacho ka result portal pe mil jaata hai — phone calls kam ho gayi hain."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SK</div>
+            <div class="testi-info">
+              <span class="testi-name">Sana Khatoon</span>
+              <span class="testi-role">Coordinator, Bright Future Academy · Lahore</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Hamare 3 branches hain — pehle ek ek branch ka data alag alag sambhalna mushkil tha. EduCore mein ek dashboard se teeno campus ka data dekh sakte hain. Setup bhi 2 din mein ho gaya tha."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AR</div>
+            <div class="testi-info">
+              <span class="testi-name">Abdul Rehman</span>
+              <span class="testi-role">Director, Beacon Light Schools · Bahawalpur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TRUST SECTION
+  ═══════════════════════════════════════ -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item reveal">
+          <span class="trust-icon">⚡</span>
+          <div>
+            <h4>Fast Setup</h4>
+            <p>3 din mein live — guaranteed</p>
+          </div>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-icon">🔒</span>
+          <div>
+            <h4>Secure & Reliable</h4>
+            <p>Daily backups, SSL encrypted</p>
+          </div>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-icon">🎓</span>
+          <div>
+            <h4>Made by Educators</h4>
+            <p>Real schools ke saath kaam karke bana</p>
+          </div>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-icon">💬</span>
+          <div>
+            <h4>24/7 Support</h4>
+            <p>WhatsApp pe direct baat — hamesha</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FAQ SECTION
+  ═══════════════════════════════════════ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">FAQ</p>
+        <h2 class="section-title">Aapke Sawaalon Ke Jawaab</h2>
+        <p class="section-sub">Common concerns — seedha aur saaf jawaab</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Kya school ka data safe rehta hai?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Bilkul. Aapka data dedicated server pe hota hai — shared nahi. Daily automated backups hoti hain, SSL encryption hai, aur role-based access hai taake sirf authorized log hi data dekh sakein. Koi bhi bahar se access nahi kar sakta.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Kya iske liye fast internet zaroori hai?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Nahi. EduCore light-weight design hai — normal 3G/4G pe bhi perfectly kaam karta hai. Mobile pe bhi responsive hai, isliye aap kisi bhi device se access kar sakte hain.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Kya pricing baad mein change hogi?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Nahi. Aap jo plan lein enge, uski price lock ho jaati hai. Koi surprise charges nahi, koi hidden fees nahi. Pricing sirf naye clients ke liye update hoti hai — existing clients pe nahi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Purana data kaise migrate hoga?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Hum khud migrate karte hain. Aap Excel ya kisi bhi format mein apna student/staff data bhejein — hum 1 din mein import kar denge. Enterprise plan mein yeh bilkul free hai.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Staff ko training kaise milegi?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Go-live ke waqt hum WhatsApp video call ya on-site training dete hain. System itna simple hai ke zyaadatar staff 1 din mein comfortable ho jaata hai. Baad mein bhi WhatsApp pe support milta rehta hai.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>Kya ek se zyada branches ke liye alag system chahiye?</span>
+            <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Bilkul nahi. Enterprise plan mein unlimited branches ek hi system mein hoti hain. Ek login se aap sab campuses ka data alag alag dekh sakte hain — consolidated dashboard bhi milta hai.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA BANNER BEFORE FOOTER
+  ═══════════════════════════════════════ -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-inner reveal">
+        <div class="cta-banner-text">
+          <h2>Aaj Free Demo Try Karein</h2>
+          <p>Koi commitment nahi — sirf dekh lein ke EduCore aapke school ke liye kaisa kaam karta hai.</p>
+        </div>
+        <div class="cta-banner-btns">
+          <a href="http://141.148.223.177/" target="_blank" rel="noopener" class="btn-primary">
+            <span>Live Demo Dekhein</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20EduCore%20ka%20free%20demo%20chahiye" target="_blank" rel="noopener" class="btn-whatsapp">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Karo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+    <div class="contact-grid">
+        <!-- Left: Contact Info -->
+        <div class="contact-info reveal">
+          <h3>Seedha Rabta Karein</h3>
+          <p class="contact-tagline">Hum 2 ghante ke andar reply karte hain — 8 AM se 11 PM tak.</p>
+
+          <div class="contact-detail">
+            <span class="cd-icon">📱</span>
+            <div>
+              <span class="cd-label">Phone / WhatsApp</span>
+              <a href="tel:+923136176616" class="cd-value">0313-6176616</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">📧</span>
+            <div>
+              <span class="cd-label">Email</span>
+              <a href="mailto:salmanlatif227@gmail.com" class="cd-value">salmanlatif227@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">📍</span>
+            <div>
+              <span class="cd-label">Location</span>
+              <span class="cd-value">Multan, Pakistan</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="cd-icon">🕐</span>
+            <div>
+              <span class="cd-label">Response Time</span>
+              <span class="cd-value">Within 2 hours · 8 AM – 11 PM</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20EduCore%20ka%20free%20demo%20chahiye" target="_blank" rel="noopener" class="btn-whatsapp-big">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp pe Free Demo Lein
+          </a>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Muhammad Ali" required />
+              </div>
+              <div class="form-group">
+                <label for="school">School Name</label>
+                <input type="text" id="school" name="school" placeholder="Al-Huda School System" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="principal@school.pk" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" placeholder="0313-XXXXXXX" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="students">Number of Students</label>
+              <select id="students" name="students" required>
+                <option value="">Select range</option>
+                <option value="under100">Under 100</option>
+                <option value="100-300">100 – 300</option>
+                <option value="300-600">300 – 600</option>
+                <option value="600plus">600+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message (Optional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Koi sawal? Koi zaroorat? Yahan likhein..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span id="submitText">Send Message</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Shukriya! Hum aap se 2 ghante ke andar rabta karenge. WhatsApp pe bhi message aa sakti hai.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-gradient"></div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-box">🎓</span>
+          <span class="logo-text">EduCore</span>
+        </a>
+        <p class="footer-tagline">Pakistan ka sab se modern School Management System. Simple. Fast. Reliable.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20EduCore%20ke%20baare%20mein%20jaanna%20hai" target="_blank" rel="noopener" class="social-icon social-wa" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:salmanlatif227@gmail.com" class="social-icon social-email" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h5>Quick Links</h5>
+        <a href="#features">Features</a>
+        <a href="#messaging">Messaging</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#demo">Live Demo</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-links-col">
+        <h5>Contact</h5>
+        <a href="tel:+923136176616">0313-6176616</a>
+        <a href="mailto:salmanlatif227@gmail.com">salmanlatif227@gmail.com</a>
+        <span>Multan, Pakistan</span>
+        <span>8 AM – 11 PM daily</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 EduCore. Made in Pakistan with ❤️</p>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       FLOATING ELEMENTS
+  ═══════════════════════════════════════ -->
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/923136176616?text=Assalam%20o%20Alaikum%2C%20mujhe%20EduCore%20ka%20free%20demo%20chahiye" target="_blank" rel="noopener" class="float-wa" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="float-wa-tooltip">WhatsApp Karo</span>
+  </a>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
