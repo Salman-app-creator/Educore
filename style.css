@@ -1429,3 +1429,191 @@ a.cd-value:hover { color: var(--maroon); }
   .float-wa { bottom: 20px; right: 20px; width: 50px; height: 50px; }
   .scroll-top { right: 20px; bottom: 82px; }
 }
+/* ========== WHATSAPP ALTERNATIVE SECTION ========== */
+.wa-section {
+    padding: 100px 24px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #2C4A3A 100%);
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+.wa-section::before {
+    content: '';
+    position: absolute;
+    top: -50%; right: -20%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(255,215,0,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+}
+.wa-wrap { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+.wa-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,215,0,0.15);
+    border: 1px solid rgba(255,215,0,0.35);
+    color: #FFD700;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.wa-headline {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+}
+.wa-headline .grad {
+    background: linear-gradient(100deg, #FFD700 0%, #ffed4e 40%, #d4455a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wa-sub {
+    font-size: clamp(15px, 2vw, 18px);
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    max-width: 640px;
+    margin-bottom: 50px;
+}
+.wa-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+.wa-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 32px 28px;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+.wa-card.whatsapp {
+    border-color: rgba(255,80,80,0.25);
+    background: linear-gradient(160deg, rgba(255,60,60,0.06), transparent);
+}
+.wa-card.educore {
+    border-color: rgba(255,215,0,0.4);
+    background: linear-gradient(160deg, rgba(255,215,0,0.08), transparent);
+    box-shadow: 0 20px 60px rgba(255,215,0,0.1);
+    transform: scale(1.03);
+}
+.wa-card-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+.wa-card.whatsapp .wa-card-tag { background: rgba(255,60,60,0.2); color: #ff8a8a; }
+.wa-card.educore .wa-card-tag { background: #FFD700; color: #1a1a2e; }
+.wa-card h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+}
+.wa-cost-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+.wa-cost-num {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+.wa-card.whatsapp .wa-cost-num { color: #ff6b6b; text-decoration: line-through; text-decoration-thickness: 3px; }
+.wa-card.educore .wa-cost-num { color: #FFD700; }
+.wa-cost-per {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+}
+.wa-cost-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 22px;
+    display: block;
+}
+.wa-feat {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.wa-feat li {
+    padding: 9px 0 9px 30px;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.8);
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+.wa-feat li:first-child { border-top: none; }
+.wa-feat li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #FFD700;
+}
+.wa-card.whatsapp .wa-feat li::before {
+    content: '✕';
+    color: #ff6b6b;
+}
+.wa-savings {
+    background: linear-gradient(135deg, #FFD700 0%, #d4a800 100%);
+    border-radius: 20px;
+    padding: 30px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #1a1a2e;
+}
+.wa-savings-text { font-size: 14px; font-weight: 700; line-height: 1.4; }
+.wa-savings-text small { display: block; font-size: 12px; font-weight: 600; opacity: 0.7; margin-top: 4px; }
+.wa-savings-num {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    white-space: nowrap;
+}
+.wa-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 16px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 40px;
+    box-shadow: 0 14px 40px rgba(37,211,102,0.4);
+    transition: transform 0.25s;
+}
+.wa-cta:hover { transform: translateY(-3px) scale(1.02); color: #fff; }
+.wa-cta svg { width: 20px; height: 20px; }
+@media (max-width: 768px) {
+    .wa-section { padding: 70px 20px; }
+    .wa-compare { grid-template-columns: 1fr; gap: 18px; }
+    .wa-card.educore { transform: scale(1); }
+    .wa-card { padding: 26px 22px; }
+    .wa-savings { padding: 24px 22px; flex-direction: column; text-align: center; }
+    .wa-savings-num { font-size: 32px; }
+}
