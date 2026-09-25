@@ -1904,3 +1904,30 @@ a.cd-value:hover { color: var(--maroon); }
     padding: 8px 15px;
     border-radius: 10px;
 }
+/* --- ZABARDASTI LOGO SIZE FIX --- */
+.navbar, .nav-container, .nav-logo {
+    height: auto !important;
+    min-height: 80px !important;
+    overflow: visible !important;
+    max-height: none !important;
+}
+
+.nav-logo img {
+    width: 220px !important; /* Height ki jagah width use ki hai wide logo ke liye */
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    display: block !important;
+    background-color: #111111;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+/* Footer logo ke liye */
+.footer img, footer img, .footer-logo img {
+    width: 200px !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin-bottom: 15px !important;
+}
