@@ -1904,30 +1904,37 @@ a.cd-value:hover { color: var(--maroon); }
     padding: 8px 15px;
     border-radius: 10px;
 }
-/* --- ZABARDASTI LOGO SIZE FIX --- */
-.navbar, .nav-container, .nav-logo {
-    height: auto !important;
-    min-height: 80px !important;
-    overflow: visible !important;
-    max-height: none !important;
+/* --- FINAL LOGO FIX --- */
+
+/* 1. Navbar ki height theek karein taake logo overlap na kare */
+.navbar {
+    height: 80px !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+.nav-container {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
 }
 
+/* 2. Logo ka perfect size set karein aur kala box hatayein */
 .nav-logo img {
-    width: 220px !important; /* Height ki jagah width use ki hai wide logo ke liye */
-    height: auto !important;
-    max-width: none !important;
+    height: 45px !important; /* Yeh mobile ke liye perfect size hai */
+    width: auto !important;
     max-height: none !important;
-    display: block !important;
-    background-color: #111111;
-    padding: 8px 15px;
-    border-radius: 10px;
+    background: transparent !important; /* Kala box khatam */
+    padding: 0 !important;
+    border-radius: 0 !important;
+    mix-blend-mode: screen !important; /* Image ka kala background gayab kar dega */
 }
 
-/* Footer logo ke liye */
+/* 3. Footer ka logo theek karein */
 .footer img, footer img, .footer-logo img {
-    width: 200px !important;
-    height: auto !important;
-    max-width: none !important;
-    max-height: none !important;
-    margin-bottom: 15px !important;
+    height: 60px !important;
+    width: auto !important;
+    background: transparent !important;
+    mix-blend-mode: screen !important;
 }
