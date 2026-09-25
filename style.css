@@ -1904,37 +1904,22 @@ a.cd-value:hover { color: var(--maroon); }
     padding: 8px 15px;
     border-radius: 10px;
 }
-/* --- FINAL LOGO FIX --- */
-
-/* 1. Navbar ki height theek karein taake logo overlap na kare */
-.navbar {
-    height: 80px !important;
-    padding: 0 15px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-}
-.nav-container {
-    display: flex !important;
-    align-items: center !important;
-    width: 100% !important;
-}
-
-/* 2. Logo ka perfect size set karein aur kala box hatayein */
-.nav-logo img {
-    height: 45px !important; /* Yeh mobile ke liye perfect size hai */
+/* --- CLEAN LOGO FIX --- */
+.custom-logo {
+    height: 40px !important;
     width: auto !important;
-    max-height: none !important;
-    background: transparent !important; /* Kala box khatam */
+    max-width: 150px !important;
+    display: block !important;
+    border-radius: 6px !important;
+    margin: 0 !important;
     padding: 0 !important;
-    border-radius: 0 !important;
-    mix-blend-mode: screen !important; /* Image ka kala background gayab kar dega */
+    mix-blend-mode: normal !important; /* Purana blend mode hata diya */
 }
 
-/* 3. Footer ka logo theek karein */
-.footer img, footer img, .footer-logo img {
+.footer-logo-img {
     height: 60px !important;
     width: auto !important;
-    background: transparent !important;
-    mix-blend-mode: screen !important;
+    max-width: 200px !important;
+    margin-bottom: 15px !important;
+    border-radius: 6px !important;
 }
