@@ -1904,3 +1904,30 @@ a.cd-value:hover { color: var(--maroon); }
     padding: 8px 15px;
     border-radius: 10px;
 }
+/* --- FINAL CSS FIX (Kala box khatam karne ke liye) --- */
+.custom-logo {
+    height: 40px !important;
+    width: auto !important;
+    max-width: 160px !important;
+    display: block !important;
+    background: transparent !important; /* Yeh kala box hata dega */
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.footer-logo-img {
+    height: 60px !important;
+    width: auto !important;
+    max-width: 200px !important;
+    background: transparent !important;
+    margin-bottom: 15px !important;
+}
+
+/* Agar aapke paas .logo-box ka purana style hai to usay bhi saaf karein */
+.nav-logo, .nav-logo .logo-box {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
