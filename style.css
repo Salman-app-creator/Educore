@@ -1897,3 +1897,10 @@ a.cd-value:hover { color: var(--maroon); }
   .faq-question         { padding: 16px 18px; font-size: 0.92rem; }
   .faq-item.open .faq-answer { padding: 0 18px 16px; }
 }
+.nav-logo img {
+    height: 70px !important;
+    width: auto !important;
+    background-color: #111111;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
