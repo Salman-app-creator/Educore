@@ -1904,22 +1904,3 @@ a.cd-value:hover { color: var(--maroon); }
     padding: 8px 15px;
     border-radius: 10px;
 }
-/* --- CLEAN LOGO FIX --- */
-.custom-logo {
-    height: 40px !important;
-    width: auto !important;
-    max-width: 150px !important;
-    display: block !important;
-    border-radius: 6px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    mix-blend-mode: normal !important; /* Purana blend mode hata diya */
-}
-
-.footer-logo-img {
-    height: 60px !important;
-    width: auto !important;
-    max-width: 200px !important;
-    margin-bottom: 15px !important;
-    border-radius: 6px !important;
-}
