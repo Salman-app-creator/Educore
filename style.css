@@ -68,8 +68,8 @@ h1{font-size:clamp(2.2rem,5.4vw,3.9rem);line-height:1.1;letter-spacing:-.035em;f
 .head{text-align:center;max-width:640px;margin:0 auto 48px}
 h2{font-size:clamp(1.7rem,3.8vw,2.6rem);line-height:1.15;letter-spacing:-.03em;margin:10px 0 12px}
 .head p{color:var(--mut)}
-.rv{opacity:0;transform:translateY(28px) scale(.97);transition:opacity .7s,transform .7s var(--sp);transition-delay:var(--d,0s)}
-.rv.v{opacity:1;transform:none}
+.js .rv{opacity:0;transform:translateY(28px) scale(.97);transition:opacity .7s,transform .7s var(--sp);transition-delay:var(--d,0s)}
+.js .rv.v{opacity:1;transform:none}
 /* features */
 .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:#fff;border:1px solid #f0dfe1;border-radius:var(--r);padding:26px;transition:transform .35s var(--sp),box-shadow .35s,border-color .35s}
@@ -83,6 +83,7 @@ h2{font-size:clamp(1.7rem,3.8vw,2.6rem);line-height:1.15;letter-spacing:-.03em;m
 .mini{display:flex;align-items:flex-end;gap:8px;height:80px;margin-top:18px}
 .mini span{flex:1;height:var(--h);background:var(--g);border-radius:6px 6px 0 0;transform:scaleY(0);transform-origin:bottom;transition:transform .9s var(--sp)}
 .v .mini span,.v.browser .bars span{transform:none}
+:root:not(.js) .mini span,:root:not(.js) .bars span{transform:none}
 .mini span:nth-child(2){transition-delay:.08s}.mini span:nth-child(3){transition-delay:.16s}.mini span:nth-child(4){transition-delay:.24s}.mini span:nth-child(5){transition-delay:.32s}.mini span:nth-child(6){transition-delay:.4s}
 /* messaging */
 .dark{background:linear-gradient(160deg,#2a0d12,#4a1119);color:#fff}
@@ -176,4 +177,4 @@ input.bad{border-color:#d33}
 .tick{grid-template-columns:1fr}.amt b{font-size:4rem}
 }
 @media(max-width:520px){.feats{grid-template-columns:1fr}.card.big{grid-column:auto}.two{grid-template-columns:1fr}.stats div{flex:1 1 40%}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.bars span,.mini span{transform:none}html{scroll-behavior:auto}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.bars span,.mini span{transform:none}html{scroll-behavior:auto}}
